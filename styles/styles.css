@@ -1,0 +1,177 @@
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans" sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.page-header {
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.navigation-list {
+    font-family: "PT Sans" sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;  
+}
+
+.navigation-list a {
+    font-family: "PT Sans" sans-serif;
+    color: #000000;
+}
+
+.page-main {
+    background-image: url("images/page-main.jpg");
+}
+
+.advantages {
+    font-family: "PT Sans" sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+   }
+
+.advantages-title {
+    font-family: "PT Sans" sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    background-size: 400px 384px;
+
+}   
+
+.advantages-number {
+    font-family: "PT Sans" sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+p {
+    font-family: "PT Sans" sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    
+}
+
+
+.search-title {
+    font-family: "PT Sans" sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+}
+.search-description {
+    font-family: "PT Sans" sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+
+}
+
+section .search-description + .button
+ {
+    font-family: "PT Sans" sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    background-color: #756257;
+    text-align: center;
+    width: 575px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.contact-section {
+    color: #ffffff;
+    background-color:#000000;
+    background-image: url("images/contact-section-background.jpg");
+    }
+
+.contact-section-title {
+    font-family: "PT Sans" sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    text-align:center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.contact-section-description {
+    font-family: "PT Sans" sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+.page-footer {
+    font-family: "PT Sans" sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.page-footer .social-item-twitter {
+    font-family: "PT Sans" sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.page-footer .social-item-facebook {
+    font-family: "PT Sans" sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.page-footer .social-item-youtube {
+    font-family: "PT Sans" sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.footer-link {
+    font-family: "PT Sans" sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color:#000000;
+    background-color: #ffffff;
+}
+    
