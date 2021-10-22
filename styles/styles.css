@@ -44,15 +44,16 @@ body {
 
 .page-main {
     background-image: url("images/page-main.jpg");
+    background-color: rgb(118, 192, 214);
+    repeat: no-repeat;
+    position: absolute;
 }
 
 .advantages {
-    font-family: "PT Sans" sans-serif;
-    color: #000000;
-    background-color: #ffffff;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: 700;color: #000000;
+    background-color: #ffffff;
    }
 
 .advantages-title {
@@ -65,11 +66,51 @@ body {
 
 }   
 
-.advantages-number {
-    font-family: "PT Sans" sans-serif;
-    font-size: 18px;
-    line-height: 21px;
+/*Преимущества*/
+.advantages-item-1 {
+    font-size: 24px;
+    line-height: 28px;
     color: #ffffff;
+    background-color: #83B3D3;
+}
+.advantages-item-2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+.advantages-item-3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-5 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subadvantages-item-1 {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subadvantages-item-2 {
+    color: #000000;
+    background-color: #ffffff;
+}
+.subadvantages-item-3 {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 p {
@@ -175,3 +216,160 @@ section .search-description + .button
     background-color: #ffffff;
 }
     
+
+/*Каталог*/
+
+.main-inner {
+    font-family: "PT Sans" sans-serif;
+    color: #ffffff;
+    background-color: black;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    color: #ffffff;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.search-form-field-title {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.search-label {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.price-hotels-title {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.range-toggle toggle-min {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.range-toggle toggle-max {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.search-hotels-apply button{
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    width: 160px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.search-hotels-reset {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.total-result {
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.select-control {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.hotel-card-title {
+    font-size: 24px;
+    height: 31px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.hotel-card-type {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.hotel-card-price {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.hotel-card-details {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #756257;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+}
+
+.hotel-card-favourites {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+}
+
+.button .show-more-button {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    width: 625px;
+    height: 55px;
+}
+
+.pagination-link .pagination-current-1 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #F2F2F2;
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+}
+
+.pagination-link .pagination-current-n {
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #83B3D3;
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+}
+
+.quantity-hotel-card {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    background-color: #ffffff;
+}

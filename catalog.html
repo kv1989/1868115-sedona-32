@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 <body>
     <header class="page-header">
@@ -120,7 +121,8 @@
 </main>
 
   <section class="search-result">
-    <divclass="sorting-type">
+    <h2 class="total-result">Найдено гостиниц</h2>
+    <div class="sorting-type">
       <label class="visually-hidden" for="sorting">Сортировка</label>
       <select class="select-control" id="sorting" name="sorting">
         <option value="cheap">Сначала дешевое</option>
@@ -129,13 +131,13 @@
       </select>
       <button class="visually-hidden">Сортировать</button>
     </div>
-  <div><a href="#" class="button">
+  <div><a href="#" class="button-small-card">
     <span class="visually-hidden">Мелкие карточки</span>
   </a></div>  
-  <div><a href="#" class="button">
+  <div><a href="#" class="button-big-card">
     <span class="visually-hidden">Крупные карточки</span>
   </a></div>
-  <div><a href="#" class="button">
+  <div><a href="#" class="button-list">
     <span class="visually-hidden">Список</span>
   </a></div> 
 <ul class="hotel-list">
@@ -180,25 +182,25 @@
         <button class="hotel-card-favourites" type="submit">В избранное</button>
         </li>
 </ul>
-<button class="button show-more-button" type="button">Показать еще</button>
+<button class="button show-more-button" type="button">Загрузить еще</button>
 <ul class="pagination">
    <li class="pagination-item">
-    <a class="pagination-link pagination-current">1</a>
+    <a class="pagination-link pagination-current-1">1</a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link pagination-current" href="#">2</a>
+      <a class="pagination-link pagination-current-n" href="#">2</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link pagination-current" href="#">3</a>
+        <a class="pagination-link pagination-current-n" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current" href="#">4</a>
+          <a class="pagination-link pagination-current-n" href="#">4</a>
         </li>  
             <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">...</a>
+            <a class="pagination-link pagination-current-n" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">10</a>
+              <a class="pagination-link pagination-current-n" href="#">10</a>
             </li>
  </ul>
   <div class="quantity-hotel-card">
