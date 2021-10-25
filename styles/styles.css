@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: "PT Sans" sans-serif;
+    font-family: "PT Sans" "PT Mono" sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
@@ -30,7 +30,6 @@ body {
 }
 
 .navigation-list {
-    font-family: "PT Sans" sans-serif;
     color: #000000;
     background-color: #ffffff;
     font-size: 20px;
@@ -38,15 +37,13 @@ body {
 }
 
 .navigation-list a {
-    font-family: "PT Sans" sans-serif;
     color: #000000;
 }
 
 .page-main {
     background-image: url("images/page-main.jpg");
-    background-color: rgb(118, 192, 214);
-    repeat: no-repeat;
-    position: absolute;
+    background-color: #83B3D3;
+    background-repeat: no-repeat;
 }
 
 .advantages {
@@ -57,7 +54,6 @@ body {
    }
 
 .advantages-title {
-    font-family: "PT Sans" sans-serif;
     font-size: 24px;
     line-height: 28px;
     color: #ffffff;
@@ -67,34 +63,28 @@ body {
 }   
 
 /*Преимущества*/
-.advantages-item-1 {
+.advantages-item {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 28px;   
+}
+.advantages-item .item-1 {
     color: #ffffff;
     background-color: #83B3D3;
 }
-.advantages-item-2 {
-    font-size: 24px;
-    line-height: 28px;
+.advantages-item .item-2 {
     color: #ffffff;
     background-color: #83B3D3;
 }
-.advantages-item-3 {
-    font-size: 24px;
-    line-height: 28px;
+.advantages-item .item-3 {
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-4 {
-    font-size: 24px;
-    line-height: 28px;
+.advantages-item .item-4 {
     color: #000000;
     background-color: rgba(131, 179, 211, 0.2);
 }
-.advantages-item-5 {
-    font-size: 24px;
-    line-height: 28px;
+.advantages-item .item-5 {
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -113,8 +103,7 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-p {
-    font-family: "PT Sans" sans-serif;
+.reasons {
     font-size: 22px;
     line-height: 36px;
     text-align: center;
@@ -123,14 +112,12 @@ p {
 
 
 .search-title {
-    font-family: "PT Sans" sans-serif;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
     text-align: center;
 }
 .search-description {
-    font-family: "PT Sans" sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -140,7 +127,6 @@ p {
 
 section .search-description + .button
  {
-    font-family: "PT Sans" sans-serif;
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -158,7 +144,6 @@ section .search-description + .button
     }
 
 .contact-section-title {
-    font-family: "PT Sans" sans-serif;
     font-size: 30px;
     line-height: 36px;
     text-align:center;
@@ -167,7 +152,6 @@ section .search-description + .button
 }
 
 .contact-section-description {
-    font-family: "PT Sans" sans-serif;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -185,7 +169,6 @@ section .search-description + .button
 }
 
 .page-footer .social-item-twitter {
-    font-family: "PT Sans" sans-serif;
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -193,7 +176,6 @@ section .search-description + .button
 }
 
 .page-footer .social-item-facebook {
-    font-family: "PT Sans" sans-serif;
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -201,7 +183,6 @@ section .search-description + .button
 }
 
 .page-footer .social-item-youtube {
-    font-family: "PT Sans" sans-serif;
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -209,7 +190,6 @@ section .search-description + .button
 }
 
 .footer-link {
-    font-family: "PT Sans" sans-serif;
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -220,7 +200,7 @@ section .search-description + .button
 /*Каталог*/
 
 .main-inner {
-    font-family: "PT Sans" sans-serif;
+    font-family: "PT Sans" "PT Mono" sans-serif;
     color: #ffffff;
     background-color: black;
 }
@@ -347,17 +327,7 @@ section .search-description + .button
     height: 55px;
 }
 
-.pagination-link .pagination-current-1 {
-    font-size: 20px;
-    line-height: 26px;
-    color: #000000;
-    background-color: #F2F2F2;
-    width: 55px;
-    height: 55px;
-    border-radius: 4px;
-}
-
-.pagination-link .pagination-current-n {
+.pagination-link {
     font-size: 20px;
     line-height: 26px;
     color: #000000;
@@ -365,6 +335,10 @@ section .search-description + .button
     width: 55px;
     height: 55px;
     border-radius: 4px;
+}
+
+.pagination-link .pagination-current-1 {
+    background-color: #F2F2F2;
 }
 
 .quantity-hotel-card {
