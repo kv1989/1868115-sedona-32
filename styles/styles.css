@@ -15,12 +15,30 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "PT Sans" "PT Mono" sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", "PT Mono", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.page-conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-conteiner {
+    flex-grow: 1;
 }
 
 .page-header {
@@ -29,7 +47,15 @@ body {
     line-height: 26px;
 }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
 .navigation-list {
+    width: 380px;
     color: #000000;
     background-color: #ffffff;
     font-size: 20px;
@@ -40,10 +66,35 @@ body {
     color: #000000;
 }
 
+.navigation-user {
+    max-width: 330px;
+    margin-left: auto;
+}
+
 .page-main {
+    width: 1200px;
+    margin: 0 auto;
     background-image: url("images/page-main.jpg");
     background-color: #83B3D3;
     background-repeat: no-repeat;
+}
+
+.sedona-description {
+    width: 720px;
+    margin: auto;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.reasons {
+    width: 720px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
 }
 
 .advantages {
@@ -64,60 +115,75 @@ body {
 
 /*Преимущества*/
 .advantages-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
     font-size: 24px;
     line-height: 28px;   
 }
 .advantages-item .item-1 {
+    width: 1200px;
     color: #ffffff;
     background-color: #83B3D3;
 }
 .advantages-item .item-2 {
+    width: 1200px;
     color: #ffffff;
     background-color: #83B3D3;
 }
 .advantages-item .item-3 {
-    color: #000000;
+    width: 400px;   
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item .item-4 {
-    color: #000000;
+    width: 400px;  
     background-color: rgba(131, 179, 211, 0.2);
 }
 .advantages-item .item-5 {
-    color: #000000;
+    width: 400px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.subadvantages-list {
+    display: flex; 
+    width: 1200px;
+}
+
 .subadvantages-item-1 {
+    width: 400px;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .subadvantages-item-2 {
+    width: 400px;
     color: #000000;
     background-color: #ffffff;
 }
 .subadvantages-item-3 {
+    width: 400px;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons {
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-    
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
 }
 
-
 .search-title {
+    width: 720px;
+    margin: auto;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
     text-align: center;
 }
 .search-description {
+    width: 720px;
+    margin: auto;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -135,6 +201,7 @@ section .search-description + .button
     width: 575px;
     height: 60px;
     border-radius: 10px;
+    margin: auto;
 }
 
 .contact-section {
@@ -161,6 +228,9 @@ section .search-description + .button
 }
 
 .page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
     font-family: "PT Sans" sans-serif;
     font-size: 40px;
     line-height: 40px;
@@ -168,21 +238,13 @@ section .search-description + .button
     background-color: #ffffff;
 }
 
-.page-footer .social-item-twitter {
-    font-size: 20px;
-    line-height: 20px;
-    color:#000000;
-    background-color: #ffffff;
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
-.page-footer .social-item-facebook {
-    font-size: 20px;
-    line-height: 20px;
-    color:#000000;
-    background-color: #ffffff;
-}
-
-.page-footer .social-item-youtube {
+.social-item {
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -200,9 +262,8 @@ section .search-description + .button
 /*Каталог*/
 
 .main-inner {
-    font-family: "PT Sans" "PT Mono" sans-serif;
     color: #ffffff;
-    background-color: black;
+    background-color: #000000;
 }
 
 .inner-header-title {
@@ -284,13 +345,7 @@ section .search-description + .button
     background-color: #ffffff;
 }
 
-.hotel-card-type {
-    font-size: 18px;
-    line-height: 23px;
-    color: #000000;
-    background-color: #ffffff;
-}
-
+.hotel-card-type, 
 .hotel-card-price {
     font-size: 18px;
     line-height: 23px;
