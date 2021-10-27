@@ -20,6 +20,11 @@ html {
     box-sizing: border-box;
 }
 
+::before,
+::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -32,7 +37,7 @@ body {
     background-color: #ffffff;
 }
 
-.page-conteiner {
+.page-container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -66,15 +71,25 @@ body {
     color: #000000;
 }
 
+.page-header-logo {
+    width: 138px;
+    margin: auto;
+
+}
+
 .navigation-user {
     max-width: 330px;
     margin-left: auto;
 }
 
+.welcome-section {
+    background-image: url("/images/page-main.jpg");
+}
+
 .page-main {
     width: 1200px;
     margin: 0 auto;
-    background-image: url("images/page-main.jpg");
+    background-image: url("images/main-catalog-background.jpg");
     background-color: #83B3D3;
     background-repeat: no-repeat;
 }
@@ -171,6 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 1200px;
+    background-color: #ffffff;
 }
 
 .search-title {
@@ -207,7 +223,7 @@ section .search-description + .button
 .contact-section {
     color: #ffffff;
     background-color:#000000;
-    background-image: url("images/contact-section-background.jpg");
+    background-image: url("/images/contact-section-background.jpg");
     }
 
 .contact-section-title {
@@ -264,24 +280,44 @@ section .search-description + .button
 .main-inner {
     color: #ffffff;
     background-color: #000000;
-}
+   }
 
-.inner-header-title {
+ .inner-header-title {
     font-size: 60px;
     line-height: 78px;
     color: #ffffff;
+    background-image: url("images/main-catalog-background.jpg");
 }
 
 .breadcrumbs {
+    display: flex;
+    justify-content: start;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
 }
 
+.search-form {
+    display: flex;
+  }
+
 .search-form-field-title {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
+    background-color: #000000;
+}
+
+.search-form-field-list {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    color: #ffffff;
+    background-color: #000000;
+
 }
 
 .search-label {
@@ -338,6 +374,11 @@ section .search-description + .button
     background-color: #ffffff;
 }
 
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .hotel-card-title {
     font-size: 24px;
     height: 31px;
@@ -374,12 +415,19 @@ section .search-description + .button
 }
 
 .button .show-more-button {
+    margin: auto;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     background-color: #83B3D3;
     width: 625px;
     height: 55px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    width: 370px;
 }
 
 .pagination-link {

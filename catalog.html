@@ -7,10 +7,7 @@
     </head>
 <body>
     <header class="page-header">
-        <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-                <img class="page-header-logo" alt="Герб Седоны" src="images/sedona.png">
-            </a>
+        <nav class="navigation">            
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -22,21 +19,25 @@
               <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" alt="Герб Седоны" src="images/sedona.png">
+        </a>
           
-          <div class="navigation-item">
+          <div class="navigation-user">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span></a>
               </div>
-            <div class="navigation-item">
+            <div class="navigation-user">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span></a>
               </div>
-            <div class="navigation-item">
+            <div class="navigation-user">
               <a class="navigation-link" href="#">
                 <span>Хочу сюда!</span></a>
               </div>
         </nav>
         </header>
+<div class="page-container">        
 <main class="main-inner">
     <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -50,9 +51,9 @@
         </ol>
     <section class="catalog-hotels">
         <h2 class="visually-hidden">Список фильтров</h2>
+   
     <form class="search-form">
-
-        <legend class="search-form-field-title">Инфраструктура:</legend>
+    <legend class="search-form-field-title">Инфраструктура:</legend>
     <label class="search">
         <ul class="search-form-field-list">
             <li class="search-form-field-item">
@@ -119,6 +120,7 @@
     </section>    
   </header>
 </main>
+
 
   <section class="search-result">
     <h2 class="total-result">Найдено гостиниц</h2>
@@ -203,7 +205,7 @@
               <a class="pagination-link" href="#">10</a>
             </li>
  </ul>
-  <div class="quantity-hotel-card">
+  <div class="pagination quantity-hotel-card">
     <label>Гостиниц на странице</label>
     <select class="select-control" id="quantity" name="quantity">
       <option value="4">4</option>
@@ -248,6 +250,6 @@
       <a class="footer-phone-link" href="tel:+78128121212">+7(812)812-12-12</a>
       <a class="footer-link" href="https://htmlacademy.ru" >.html academy</a>
 </footer>
-
+</div>
 </body>
 </html>
