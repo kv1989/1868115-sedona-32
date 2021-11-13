@@ -16,7 +16,8 @@
 }
 
 body {
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -24,11 +25,11 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #ffffff;
 }
 
 .navigation {
     display: flex;
+    justify-content: space-between;
     width: 1200px;
     margin: 0;
 }
@@ -39,16 +40,28 @@ body {
     gap: 33px;
     font-size: 20px;
     line-height: 26px;
+    list-style-type: none;
+}
+
+.navigation-list a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .navigation-user {
     display: grid;
     grid-template-columns: 50px 50px 200px;
+    
 }
 
 .navigation-logo {
     width: 138px;
     margin: auto;
+}
+
+.welcome-section {
+    width: 1200px;
+    margin: 0 40px;
 }
 
 .logo {
@@ -58,16 +71,25 @@ body {
 .advantages {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .sedona-description {
+    width: 730px;
+    height: 80px;
+    padding-top: 63px;
+    padding-left: 240px;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
 }
 
 .reasons {
+    width: 720px;
     font-size: 22px;
     line-height: 36px;
+    padding-left: 240px;
+    
 }
 
 /*Преимущества Седоны через сделаны гридами */
@@ -78,11 +100,15 @@ body {
                          "li-2 li-2 i-2"
                          "i-3 i-4 i-5";
     grid-template-columns: 400px 400px 400px;    
-    grid-template-rows: 384px 384px 384px 384px;                 
+    grid-template-rows: 384px 384px 384px 384px;  
+    list-style-type: none;               
 }
 
 .item-1 {
     grid-area: i-1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     color: #ffffff;
     background-color: #83B3D3;
 }
@@ -115,38 +141,78 @@ body {
 
 .item-2 {
     grid-area: i-2;
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
     background-color: #83B3D3;
 }
 
 .item-3 {
     grid-area: i-3;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .item-4 {
     grid-area: i-4;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(131, 179, 211, 0.2);
 }
 
 .item-5 {
     grid-area: i-5;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-title {
+    width: 400px;
+    height: 60px;
+    padding-top: 98px;
     font-size: 24px;
     line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .advantages-number {
     font-size: 18px;
     line-height: 21px;
+    margin: 0;
 }
 
 .advantages-description {
+    width: 220px;
+    padding-left: 90px;
+    padding-top: 26px;
     font-size: 18px;
     line-height: 21px;
+}
+
+.subadvantages-title {
+    width: 400px;
+    height: 60px;
+    padding-top: 184px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subadvantages-description {
+    width: 250px;
+    padding-left: 75px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 21px;    
+}
+
+.subadvantages-list {
+    display: flex;
+    flex-direction: column;
 }
 
 .search {
@@ -162,41 +228,88 @@ body {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+    padding-top: 91px;
     text-align: center;
+    text-transform: uppercase;
 }
 .search-description {
     width: 720px;
-    margin: auto;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
     text-align: center;
+    margin-top: 15px;
+    margin-left: 240px;
+   }
+
+.button-search {
+    width: 575px;
+    height: 60px;
+    align-self: center;
+    background-color: #756257;
+    color:#ffffff;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-bottom: 91px;
+    margin-top: 73px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+
 }
 
 .contact-section {
-    display: grid;
-    grid-template: 400px 400px 400px;
-    width: 1200px;
-    color: #ffffff;
-    background-color:#000000;
-    background-image: url("/images/contact-section-background.jpg");
-    }
+    height: 481px;
+    background-image: url(/images/contact-section-background.jpg);
+    background-color: #889988;
+}
 
 .contact-section-title {
+    width: 720px;
+    padding-top: 94px;
+    padding-left: 240px;
     font-size: 30px;
     line-height: 36px;
     text-align:center;
     color: #ffffff;
-    background-color: #000000;
 }
 
 .contact-section-description {
+    width: 720px;
+    padding-top: 159px;
+    padding-left: 240px;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #ffffff;
-    background-color: #000000;
+  }
 
+.contact-section-form {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    padding-bottom: 94px;
+    padding-left: 200px;
+    height: 60px;
+}
+
+.text {
+    width: 600px;
+    height: 60px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 20px;
+}
+
+.button-contact {
+    width: 200px;
+    height: 60px;
+    background-color: #83B3D3;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
 }
 
 .page-footer {
@@ -204,7 +317,7 @@ body {
     justify-content: space-between;
     width: 1200px;
     margin: 0;
-    font-family: "PT Sans" sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 40px;
     line-height: 40px;
     color:#000000;
@@ -299,7 +412,7 @@ body {
 .hotel-card {
     display: grid;
     grid-template-columns: 250px 200px 200px 550px;
-    grid-row: 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px;
     gap: 10px;
     width: 1200px;
 }

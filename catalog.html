@@ -53,52 +53,57 @@
         <h2 class="visually-hidden">Список фильтров</h2>
    
     <form class="search-form">
+    <fieldset>
     <legend class="search-form-field-title">Инфраструктура:</legend>
-    <label class="search">
-        <ul class="search-form-field-list">
+      <ul class="search-form-field-list">
             <li class="search-form-field-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="swimming pool">
         <span class="search-mark"></span>
         <span class="search-label">Бассейн</span>
-    </label>
+    
     </li>
     <li class="search-form-field-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="parking">
         <span class="search-mark"></span>
         <span class="search-label">Парковка</span>
-    </label>
+    
     </li>
     <li class="search-form-fiield-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="Wi-Fi">
         <span class="search-mark"></span>
         <span class="search-label">Wi-Fi</span>
-    </label>
-    </li>
+      </li>
+  </ul>
+ </fieldset>
     </form>    
     <form class="search-form-fieldset">
+      <fieldset>
         <legend class="search-form-field-title">Тип жилья:</legend>
-         <label class="search">
+        
         <ul class="search-form-field-list">
             <li class="search-form-field-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="hotel">
         <span class="search-mark"></span>
         <span class="search-label">Гостиница</span>
-    </label>
+   
     </li>
     <li class="search-form-field-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="motel">
         <span class="search-mark"></span>
         <span class="search-label">Мотель</span>
-    </label>
+    
     </li>
     <li class="search-form-field-item">
         <input class="visually-hidden search-form-input" type="checkbox" name="apartment">
         <span class="search-mark"></span>
         <span class="search-label">Апартаменты</span>
-    </label>
+    
     </li>
+  </ul>
+      </fieldset>
     </form>  
     <form class="price-hotels">
+      <fieldset>
         <legend class="price-hotels-title">Стоимость, Р:</legend>
         <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену</span>
@@ -112,6 +117,7 @@
         <label class="catalog-filter-label">
             до <input class="catalog-filter-input" type="number" name="max-price">
         </label>
+      </fieldset>
       </form> 
     <form class="search-hotels">
       <button class="search-hotels-apply" type="submit">Применить</button>
@@ -133,13 +139,13 @@
       </select>
       <button class="visually-hidden">Сортировать</button>
     </div>
-  <div class="mode-buttons"><button class="mode-buttons-card-small" type="submit">
+  <div class="mode-buttons"><button class="mode-buttons-card-small" type="submit"></button>
     <span class="visually-hidden">Мелкие карточки</span>
   </div>  
-  <div class="mode-buttons"><button class="mode-buttons-card-big" type="submit">
+  <div class="mode-buttons"><button class="mode-buttons-card-big" type="submit"></button>
     <span class="visually-hidden">Крупные карточки</span>
   </div>
-  <div class="mode-buttons"><button class="mode-buttons-card-list" type="submit">
+  <div class="mode-buttons"><button class="mode-buttons-card-list" type="submit"></button>
     <span class="visually-hidden">Список</span>
   </div> 
 </section>  
@@ -171,7 +177,7 @@
         <span class="hotel-card-type">Апартаменты</span>
         <span class="hotel-card-price">от 2000</span>
       <a href="#" class="hotel-card-details">Подробнее</a>
-      <button class="hotel-card-favourites" type="submit" aria-checked="">В избранное</button>
+      <button class="hotel-card-favourites" type="submit">В избранное</button>
       <span class="rating">Рейтинг 9,2</span>
       </li>
       <li class="hotel-card">
@@ -215,17 +221,15 @@
     </select>
   </div>
     
-  <section class="contact-section">
-    <h2 class="contact-section-title">Подпишитесь на рассылку</h2>
-    <span class="contact-section-description">Только полезная информация и никакого спама,
-      честное бойскаутское!</span>
-    <form class="contact-section-form" action="https://htmlacademy.ru" method="POST">
-     <label class="subscribe-button-label">
-      <input type="text" id="email" name="E-mail" placeholder="Ваш e-mail" required>
-      <button class="button" type="submit">Подписаться</button>
-      </label>
-    </form>
-  </section>
+<section class="contact-section">
+  <h2 class="contact-section-title">Подпишитесь на рассылку</h2>
+  <span class="contact-section-description">Только полезная информация и никакого спама,
+    честное бойскаутское!</span>
+  <form class="contact-section-form" action="https://htmlacademy.ru" method="POST">
+   <input type="text" id="email" name="E-mail" placeholder="Ваш e-mail">
+   <button class="button-contact" type="submit">Подписаться</button>
+  </form>
+</section>
 
 <footer class="page-footer">
   <section class="footer-social">
