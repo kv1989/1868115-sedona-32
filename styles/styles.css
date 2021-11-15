@@ -45,10 +45,12 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     font-size: 20px;
     line-height: 26px;
     list-style-type: none;
@@ -95,6 +97,7 @@ body {
 }
 
 .navigation-user-want {
+    display: block;
     width: 160px;
     height: 37px;
     background-color: #756257;
@@ -102,24 +105,26 @@ body {
     margin-right: 72px;
 }
 
-.navigation-link-want {    
+.navigation-link-want {  
+    display: block;
     color: #ffffff;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     padding-top: 9px;
     padding-bottom: 10px;
 }
 
 .navigation-link-favourites {
+    display: block;
     padding-right: 33px;
-    padding-top: 24px;
 }
 
 .navigation-link-search {
-    padding-right: 22px;
-    padding-top: 24px;
+    display: block;
+    padding-right: 22px;  
 }
 
 .navigation-link-want a {
@@ -397,6 +402,7 @@ body {
 
 .social-list {
     display: flex;
+    align-items: center;
     height: 120px;
     margin: 0;
     padding: 0;
@@ -404,12 +410,14 @@ body {
 }
 
 .social-item-twitter {
+    display: block;
     padding-left: 72px;
     padding-top: 50px;
     padding-bottom: 55px;
 }
 
 .social-item-facebook {
+    display: block;
     padding-left: 29px;
     padding-top: 49px;
     padding-bottom: 53px;
@@ -417,6 +425,7 @@ body {
 }
 
 .social-item-youtube {
+    display: block;
     padding-left: 30px;
     padding-top: 50px;
     padding-bottom: 54px;
@@ -424,6 +433,7 @@ body {
 
 
 .footer-link {
+    display: block;
     font-size: 20px;
     line-height: 20px;
     color:#000000;
@@ -435,6 +445,7 @@ body {
 }
 
 .footer-phone-link {
+    display: block;
     color: #000000;
     width: 720px;
     margin-left: 61px;
